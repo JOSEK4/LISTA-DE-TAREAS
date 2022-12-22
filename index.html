@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tareas</title>
+
+    <!-- fontawesome kit -->
+
+    <script
+      src="https://kit.fontawesome.com/4d63ed8f35.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- styles -->
+
+    <link rel="icon" type="image/png" href="./assets/images/Logo-favi.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dark-mode.css" />
+  </head>
+
+  <body>
+    <main>
+      <header class="header">
+        <div class="nav__menu">
+          <h1>Select Theme</h1>
+          <hr />
+          <div class="theme__btn-container">
+            <span
+              class="theme-btn"
+              data-color="113, 20, 167"
+              style="background-color: rgb(113, 20, 167)"
+            ></span>
+            <span
+              class="theme-btn"
+              data-color="55, 55, 205"
+              style="background-color: rgb(55, 55, 205)"
+            ></span>
+            <span
+              class="theme-btn"
+              data-color="250, 67, 53"
+              style="background-color: rgb(250, 67, 53)"
+            ></span>
+            <span
+              class="theme-btn"
+              data-color="254, 155, 10"
+              style="background-color: rgb(254, 155, 10)"
+            ></span>
+            <span
+              class="theme-btn"
+              data-color="24, 185, 46"
+              style="background-color: rgb(24, 185, 46)"
+            ></span>
+            <span
+              class="theme-btn"
+              data-color="5, 109, 52"
+              style="background-color: rgb(5, 109, 52)"
+            ></span>
+            <span
+              class="theme-btn"
+              data-color="0, 204, 204"
+              style="background-color: rgb(0, 204, 204)"
+            ></span>
+            <span
+              class="theme-btn"
+              data-color="203, 39, 224"
+              style="background-color: rgb(203, 39, 224)"
+            ></span>
+            <span
+              class="theme-btn"
+              data-color="12, 162, 221"
+              style="background-color: rgb(12, 162, 221)"
+            ></span>
+          </div>
+        </div>
+        <div class="title">
+          <div class="mode-container">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <img src="./assets/images/logo-todo-list.png" />
+          <!---- Burguer Menu ---->
+          <div class="nav__burguer">
+            <span class="nav__burguer-line-1"></span>
+            <span class="nav__burguer-line-2"></span>
+            <span class="nav__burguer-line-3"></span>
+          </div>
+        </div>
+      </header>
+      <section class="main__container">
+        <div class="container__task-counter">
+          <div class="task__list-content">
+            <div class="task__left">
+              <h1 class="task-number" data-task-number>0</h1>
+              <span class="task-number__text">Total Tasks</span>
+            </div>
+            <div class="task__completed">
+              <h1 class="task-number__text--completed" data-task-completed>
+                0
+              </h1>
+              <span class="task-number__text">Task completed</span>
+            </div>
+          </div>
+        </div>
+        <div class="mainCard">
+          <div class="main__card-add-task">
+            <form action="">
+              <input
+                type="text"
+                name="task"
+                placeholder="Add a new task"
+                class="inputForm"
+                autocomplete="off"
+                data-form-input
+              />
+              <button type="submit" class="btnCreate" data-form-btn>
+                <i class="fa-solid fa-check"></i>
+              </button>
+            </form>
+          </div>
+          <div class="task__list" data-task-list></div>
+          <ul class="cardsList" data-list></ul>
+        </div>
+        <div class="mainCard__bottom-container">
+          <div class="bottom__container-content">
+            <div class="filter__container">
+              <ul class="filter__list">
+                <li class="filter__item" data-filter-all>All</li>
+                <li class="filter__item" data-filter-active>Active</li>
+                <li class="filter__item" data-filter-completed>Completed</li>
+                <svg
+                  class="btn__detelete-selected"
+                  data-delete-all
+                  xmlns="http://www.w3.org/2000/svg"
+                  xml:space="preserve"
+                  version="1.1"
+                  style="
+                    shape-rendering: geometricPrecision;
+                    text-rendering: geometricPrecision;
+                    image-rendering: optimizeQuality;
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                  "
+                  viewBox="0 0 0.34 0.39"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003"
+                >
+                  <g id="Capa_x0020_1">
+                    <metadata id="CorelCorpID_0Corel-Layer" />
+                    <g id="_2077465201184">
+                      <path
+                        fill="currentcolor"
+                        d="M0.32 0.1l-0.29 -0c-0,0.02 0,0.08 0.01,0.1 0,0.03 0,0.07 0.01,0.1 0,0.03 -0,0.07 0.03,0.08 0.01,0 0.2,0 0.21,0 0.03,-0.01 0.02,-0.05 0.03,-0.08 0,-0.03 0.01,-0.19 0.01,-0.2zm-0.17 0.14c-0.02,-0.01 -0.03,-0.04 -0.05,-0.04 -0.01,0 -0.02,0.01 -0.02,0.03 0,0.01 0.04,0.04 0.04,0.05 0.03,0.03 0.03,0.02 0.08,-0.03 0.02,-0.02 0.03,-0.03 0.05,-0.05 0.01,-0.01 0.02,-0.02 0.02,-0.02 0,-0.02 -0.02,-0.04 -0.04,-0.02 -0,0 -0.01,0.01 -0.01,0.01 -0.01,0.01 -0.01,0.02 -0.02,0.02 -0.01,0.01 -0.04,0.04 -0.05,0.05z"
+                      />
+                      <path
+                        fill="currentcolor"
+                        d="M0.1 0.02c-0.02,0 -0.06,-0 -0.08,0 -0.02,0.01 -0.02,0.04 -0,0.05 0.01,0 0.3,0 0.31,0 0.02,-0.01 0.02,-0.04 -0,-0.05 -0.02,-0 -0.06,-0 -0.08,-0 -0.02,-0.03 -0.02,-0.02 -0.07,-0.02 -0.04,0 -0.06,-0.01 -0.07,0.02z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__content-copyright">
+            <p>
+              Copyright © 2022 | Coded with
+             
+              by Jose Ortiz
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="js/script.js"></script>
+    <script src="js/change-color.js"></script>
+    <script src="js/dark-mode.js"></script>
+  </body>
+</html>
